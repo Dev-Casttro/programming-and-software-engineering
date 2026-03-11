@@ -1,8 +1,8 @@
 #For é um laço de repetição
 # Função range para imprimir os numeros inteiros.
 
-for i in range(1, 11):
-    print(i)
+for j in range(1, 11):
+    print(j)
 
 
 """
