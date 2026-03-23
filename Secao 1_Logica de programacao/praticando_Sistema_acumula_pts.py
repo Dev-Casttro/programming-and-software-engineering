@@ -46,8 +46,77 @@ while True: # continua o loop enquanto verdadeiro
 
     print ("Cadastro Realizado com Sucesso!")  # exibi a mensagem na tela.
 
+    
+    
+    break
 
-    print(nome, cpf)
+print()
+
+# Sistema do Caixa
+
+Pontos = 0 # Pontos do cliente 
+
+print("Passe sua Compra e acumule pontos")
+
+cliente = input("Digite o CPF: ") # solicita o CPF, caso cliente fidelizado
+
+if cliente in cpf: # Compara se o CPF digitado é o mesmo que o cadastrado.
+    print(f"\n{nome}") # exibi o nome do informado com cpf
+    print(f"Pontos: {Pontos}")
+else:
+    print("CPF Invalido") # se if for falso, ele imprime cpf invalido.
+
+
+# Processamento da compra 
+
+import random
+
+produtos_compra = float(random.randrange(1, 1500))
+
+print(f"Total da compra: {produtos_compra}\n")
+
+
+
+
+menu_pagamento = {
+
+    1 : "Débito",
+    2 : "Crédito",
+    3 : "Dinheiro"
+}
+
+print("Formas de Pagamento\n"
+      
+      "1 - Débito\n"
+      "2 - Crédito\n"
+      "3 - Dinheiro\n"
+      )
+
+opcao_pagamento = int(input("Escolha a opção de pagamento (1-3): "))
+menu_pagamento[opcao_pagamento]
+
+
+if opcao_pagamento == 1 in menu_pagamento:
+
+        Pontos = produtos_compra
+        print(f"\n Pagamento Realizado com sucesso !\nPontos acumulados: {Pontos}\n")
+    
+elif opcao_pagamento == 2  in menu_pagamento:
+   
+        Pontos = produtos_compra
+        print(f"\n Pagamento Realizado com sucesso !\nPontos acumulados: {Pontos}\n")
+    
+elif opcao_pagamento == 3  in menu_pagamento:
+
+        Pontos = produtos_compra
+        print(f"\nPagamento Realizado com sucesso !\nPontos acumulados: {Pontos}\n")
+    
+print("Obrigado por sua preferencia!")
+    
+
+
+
+
 
     
 
