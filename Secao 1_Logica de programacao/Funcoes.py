@@ -42,3 +42,22 @@ def saudacao(nome):
 nome_user = input("Digite seu nome: ")
 
 saudacao(nome_user)
+
+print()
+
+
+
+
+
+# Argumentos Default e non-default
+
+
+def exibir_informacoes(nome, idade, cidade = "Desconhecida"):
+
+    print(f"Nome: {nome}")
+    print(f"Idade: {idade}")
+    print(f"Cidade: {cidade}")
+
+exibir_informacoes("Gustavo", 22, "São Paulo\n")
+
+exibir_informacoes("Amabilly", 22)
