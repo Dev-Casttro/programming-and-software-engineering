@@ -10,7 +10,7 @@ def clubes(corinthians, palmeiras, Campeonato = "indefinido"):
    
    print(f"Titulos do {Campeonato}\n")
 
-   return print (f"Corinthians: {corinthians}\nPalmeiras: {palmeiras}")
+   return (f"Corinthians: {corinthians}\nPalmeiras: {palmeiras}")
 
 
 
